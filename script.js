@@ -1,12 +1,15 @@
-function submitForm(event) {
-  event.preventDefault();
-
+function submitForm() {
   // Obtenha os valores selecionados do menu e as informações do cliente
   var selectedMenu = document.getElementById("menu").value;
   var customerName = document.getElementById("name").value;
   var customerEmail = document.getElementById("email").value;
 
-  // Preencha os elementos na página de confirmação
-  document.getElementById("selectedMenu").textContent = selectedMenu;
-  document.getElementById("customerName").textContent = "Nome: " + customerName;
-  document.getElementById("customerEmail").textContent = "Email: "
+  // Armazene os dados do pedido do menu no LocalStorage
+  var menuData = {
+    selectedMenu: selectedMenu,
+    customerName: customerName,
+    customerEmail: customerEmail
+  };
+  localStorage.setItem("menuData", JSON.stringify(menuData));
+
+  //
