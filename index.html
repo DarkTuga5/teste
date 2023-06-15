@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marcação de Almoços</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Marcação de Almoços</h1>
+  </header>
+
+  <main>
+    <h2>Selecione a data, horário e menu do almoço:</h2>
+    <form id="booking-form">
+      <label for="date">Data:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Horário:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="menu">Menu:</label>
+      <select id="menu" name="menu" required>
+        <option value="">Selecione o menu</option>
+        <option value="Menu 1">Menu 1</option>
+        <option value="Menu 2">Menu 2</option>
+        <option value="Menu 3">Menu 3</option>
+      </select>
+
+      <input type="submit" value="Marcar Almoço">
+    </form>
+
+    <div id="booking-success" class="hidden">
+      <p>Almoço marcado com sucesso!</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
