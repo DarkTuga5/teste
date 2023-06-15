@@ -10,25 +10,23 @@
   </header>
 
   <main>
-    <h2>Selecione a data, horário e menu do almoço:</h2>
-    <form id="booking-form">
-      <label for="date">Data:</label>
-      <input type="date" id="date" name="date" required>
-
+    <h2>Seleção de Menu</h2>
+    <form id="lunchForm" onsubmit="submitForm(event)">
       <label for="menu">Menu:</label>
-      <select id="menu" name="menu" required>
-        <option value="">Selecione o menu</option>
+      <select name="menu" id="menu">
         <option value="Menu 1">Menu 1</option>
         <option value="Menu 2">Menu 2</option>
         <option value="Menu 3">Menu 3</option>
       </select>
 
-      <input type="submit" value="Marcar Almoço">
-    </form>
+      <label for="name">Nome:</label>
+      <input type="text" name="name" id="name" required>
 
-    <div id="booking-success" class="hidden">
-      <p>Almoço marcado com sucesso!</p>
-    </div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <input type="submit" value="Confirmar Pedido">
+    </form>
   </main>
 
   <script src="script.js"></script>
