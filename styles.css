@@ -29,7 +29,7 @@ form label {
   margin-bottom: 10px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   padding: 10px 20px;
   background-color: #ff5500;
   color: #fff;
