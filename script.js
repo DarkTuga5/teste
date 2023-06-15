@@ -7,7 +7,6 @@ document.getElementById("booking-form").addEventListener("submit", function(even
   // Exemplo: exibir uma mensagem de sucesso
   document.getElementById("booking-form").reset();
   document.getElementById("booking-success").classList.remove("hidden");
-});
 
 // Obtenha os valores selecionados do menu e as informações do cliente
 var selectedMenu = document.getElementById("menu").value;
