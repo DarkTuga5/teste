@@ -37,3 +37,9 @@ input[type="button"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.logo {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-top: 10px; /* Ajuste a margem conforme necessário */
+}
